@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: url("room.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin:  auto;
+  }
+  
+  .label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+    margin-bottom: 1rem;
+    opacity: 0%;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+ .div-blur{
+    background-color: white;
+    background-size: cover;
+    overflow: hidden;
+    
+    position: absolute;
+    height: 150%;
+    
+    top: 30%;
+    left: 300px;
+    right: 300px;
+    
+    z-index: -1;
+ }
+.div-content{
+    height: 100%;
+    width: 100%;
+}
+.table-content{
+
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* text-align: center; */
+  padding: 5% 20%;
+}
+li{
+    list-style: none;
+}
+.table-content table tr{
+    border: 1px solid black;
+    width: 100%;
+   
+}   
+.table-content table tr td {
+   padding:1% 1%;
+   font-size:19px ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 600;
+
+}
+.table-content table tr td img{
+    width: 100%;
+    padding: 2%;
+ }
+ .table-content table tr td a{
+   
+   background-color:#ff7048;
+   color:#FFF;
+   text-decoration: none;
+   padding: 0 2%;
+ }
+ .table-content table tr th{
+     font-size: 20px;
+ }
+ 
+ 

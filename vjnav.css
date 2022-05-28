@@ -1,0 +1,60 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* height: 10vh; */
+}
+
+.navbar {
+    z-index: 5;
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #adb5bd;
+    width: 100%;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.nav-link {
+    font-size: 1rem;
+    display: flex;
+    margin: 0 50px;
+    justify-content: space-around;
+}
+
+.nav-link a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 100px;
+}
+
+@media screen and (max-width:1455px) {
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1322px) {
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:1257px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,174 @@
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 0;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 1;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 120deg, transparent, var(--primary-color), transparent);
+        transform: translateX(-100%);
+        transition: 0.6s;
+    }
+    &:hover {
+        background: transparent;
+        box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+        &::before {
+            transform: translateX(100%);
+        }
+    }
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-input-material {
+    --input-default-border-color: white;
+    --input-border-bottom-color: white;
+    input {
+        color: white;
+    }
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+body {
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e3e1ee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: rgb(9, 8, 9);
+}
+
+.login-box {
+    display: none;
+    width: 25em;
+    height: 32em;
+    background: rgba(0, 0, 0, 0.438);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 3em 3em;
+    border-radius: 10%;
+    background: #dad5fa;
+    backdrop-filter: blur(2px);
+    opacity: 80%;
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.login-image {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    position: absolute;
+    top: -3.7em;
+    left: calc(50% - 3.7em);
+}
+
+h3 {
+    margin: 0 auto;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.login-box p {
+    margin: 0;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+form {
+    color: black;
+}
+
+.login-box input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1.2px solid rgb(2, 2, 2);
+    background: transparent;
+    outline: none;
+    height: 2em;
+    color: rgb(2, 2, 2);
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 2.5em;
+    background: rgb(185, 124, 1);
+    color: white;
+    font-size: 1em;
+    border-radius: 1.5rem;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgb(4, 3, 4);
+    color: white;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 0.75em;
+    line-height: 1.7em;
+    color: rgb(53, 51, 58);
+    display: flex;
+    flex-direction: vertical;
+}
+
+.login-box a:hover {
+    color: rgb(1, 1, 1);
+}

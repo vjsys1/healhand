@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh ;
+}
+
+
+
+/* ABOUT */
+.about-section{
+    text-align: center;
+    margin: 50px auto;
+}
+.about-section h1{
+    font-size: 3rem;
+    padding: 20px 0;
+}
+.about-section p{
+    margin: 0 50px;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+
+}
+.cards{
+    border: 2px solid black;
+    width: 20%;
+    position: relative;
+    background-color: lavender;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 2rem grey;
+    overflow: hidden;
+}
+.image img{
+    width:100%; 
+    display: block;
+    object-fit: cover;
+    /* position: absolute; */
+    
+}
+.title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    background: rgb(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.cards:hover .title{
+    opacity: 1;
+}
+.image_title{
+    font-size: 1.5em;
+}
+.image_dispcriotion{
+    padding: 0 2rem;
+}
+
+.descrip p{
+    text-align: center;
+    padding: 1rem 1rem;
+
+}
+.descrip button{
+    /* position: relative; */
+    width: 100%;
+    padding: 1rem 0;
+    background: #ff8fa3;
+}
+/*-----------------------responisve------------------ */
+@media screen and (max-width:1000px) {
+    .cards{
+        width: 40%;
+        height: 20%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    
+    
+    .cards{
+        width: 60%;
+        height: 20%;
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        width: 100%;
+    }
+    
+    
+    .cards{
+        width: 100%;
+        height: 20%;
+    }
+}
+
+
+/* ------------------ordainery----------------------------- */
+.ordinary{
+    background: url("doct.jpg");
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 40px 0;
+    border: 1px solid black;
+    position: relative;
+
+}
+.icon{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid black; */
+
+}
+.icon img{
+    margin: 0 50px;
+}
+.icon #smile{
+    width: 50px;
+}
+.icon #tag{
+    width: 50px;
+}
+.extra-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*---------------------------------- Footer--------------------------------- */
+footer{
+
+    /* background: #c9184a; */
+    width: 100%;
+    background-image: linear-gradient(to left ,#ff8fa3, #c9184a);
+}
+.main-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+    /* align-items: center; */
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 50px;
+}
+.box h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.con{
+    margin: 20px 0 0 0;
+}
+.left .social{
+    margin: 20px 0 0 0;
+
+    width: 300px;
+    text-align: center;
+
+}
+.left .social a{
+    /* font-size: 2rem; */
+    color: white;
+}
+.left .social a span{
+    height: 40px;
+    /* font-size: 2rem; */
+    padding: 0 1.25rem;
+
+}
+.text{
+    padding: 10px 0;
+}
